@@ -17,15 +17,8 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(var medico in Medicos)
-        {
-            <tr>
-                <td>@medico.Id</td>
-                <td>@medico.Nome</td>
-                <td>@medico.Crm</td>
-                <td><button class="btn btn-outline-danger" @onclick="@(()=>Delete(medico))">Deletar</button></td>
-            </tr>
-        }
+       @*No componente*@
+       <MedicoTemplateList Medicos="@Medicos" DeleteCallback="Delete"/>
     </tbody>
 </table>
 
