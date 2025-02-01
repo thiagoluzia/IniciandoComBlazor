@@ -1,1 +1,1 @@
-# BlazorComponent
+# Blazor Component
